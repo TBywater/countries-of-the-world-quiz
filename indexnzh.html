@@ -147,7 +147,11 @@
 
 <body>
 
-    <div id="map"></div>
+    <div id="map">
+    
+        <div class='popup'>
+
+    </div>
     
 
     <!-- Core JavaScript
@@ -216,6 +220,8 @@
                     var name = countryNames[i];
                     countryMarkers[i]._icon.innerHTML = '<span class="game-bad-label">' + name + '</span>';
                     $(".popup-overlay, .popup-content").addClass("active");
+                    $logoContent.append("<div class='logo-container'><span class='logo-heading'>YOU DONE GOOD </span></div>");
+            
                     
                 }
             }
