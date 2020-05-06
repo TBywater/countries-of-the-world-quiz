@@ -219,7 +219,7 @@
                 if(!(i in foundCountries)){
                     var name = countryNames[i];
                     countryMarkers[i]._icon.innerHTML = '<span class="game-bad-label">' + name + '</span>';
-                     var logoContent = $("<div class='logo-content'></div>");
+                     for(var logoContent = $("<div class='logo-content'></div>");
             logoContent.append("<div class='logo-container'><span class='logo-heading'>YOU DONE GOOD </span></div>");
             
                     
