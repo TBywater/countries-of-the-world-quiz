@@ -215,6 +215,8 @@
                 if(!(i in foundCountries)){
                     var name = countryNames[i];
                     countryMarkers[i]._icon.innerHTML = '<span class="game-bad-label">' + name + '</span>';
+                    $(".popup-overlay, .popup-content").addClass("active");
+                    
                 }
             }
         }
