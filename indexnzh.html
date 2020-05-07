@@ -147,11 +147,7 @@
 
 <body>
 
-    <div id="map">
-    
-        <div class='popup'>
-
-    </div>
+    <div id="map"></div>
     
 
     <!-- Core JavaScript
@@ -180,7 +176,7 @@
         var totalCount = countries.length;
 
         
-        var timeLeft = 1*3;
+        var timeLeft = 1*60;
         var running = false;
 
         function updateScore(){
@@ -219,14 +215,8 @@
                 if(!(i in foundCountries)){
                     var name = countryNames[i];
                     countryMarkers[i]._icon.innerHTML = '<span class="game-bad-label">' + name + '</span>';
-              
                 }
             }
-            
-            for(var logoContent = $("<div class='logo-content'></div>");
-            logoContent.append("<div class='logo-container'><span class='logo-heading'>YOU DONE GOOD </span></div>");
-            
-            
         }
        
         $(document).ready(function(){
